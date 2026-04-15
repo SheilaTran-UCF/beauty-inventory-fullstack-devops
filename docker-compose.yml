@@ -1,0 +1,35 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: beauty-db
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: beauty_inventory
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    container_name: beauty-backend
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USERNAME: root
+      DB_PASSWORD: 123456
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./frontend
+    container_name: beauty-frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+
+volumes:
+  mysql_data:
