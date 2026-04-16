@@ -6,7 +6,7 @@ pipeline {
             steps {
                 dir('backend') {
                     sh 'chmod +x mvnw'
-                    sh './mvnw clean package -DskipTests'
+                    sh './mvnw clean package -Dmaven.test.skip=true'
                 }
             }
         }
