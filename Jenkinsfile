@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     stages {
-
         stage('Build Backend') {
             steps {
                 dir('backend') {
@@ -32,6 +31,5 @@ pipeline {
                 sh 'docker compose up -d'
             }
         }
-
     }
 }
