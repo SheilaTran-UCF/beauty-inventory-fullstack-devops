@@ -1,0 +1,13 @@
+package edu.inventory.backend;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BsckendApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
