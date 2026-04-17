@@ -11,15 +11,6 @@ pipeline {
             }
         }
 
-        stage('Build Frontend') {
-            steps {
-                dir('frontend') {
-                    sh 'npm install'
-                    sh 'npm run build'
-                }
-            }
-        }
-
         stage('Build Docker') {
             steps {
                 sh 'docker compose build'
