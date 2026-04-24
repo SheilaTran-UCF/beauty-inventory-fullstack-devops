@@ -47,7 +47,8 @@ A full-stack Beauty Inventory Management System built using modern web technolog
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone Repository
+###
+1️⃣ Clone Repository
 ```bash
 git clone https://github.com/your-username/beauty-inventory-fullstack-devops.git
 cd beauty-inventory-fullstack-devops
@@ -98,6 +99,8 @@ Backend dependency on Docker services
 Initial JMeter failures due to server availability
 High memory usage with ZAP and Kubernetes
 CI/CD pipeline troubleshooting in Jenkins
+
+####
 
 🎯 Conclusion
 
