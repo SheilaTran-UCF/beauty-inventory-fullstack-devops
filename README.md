@@ -49,7 +49,7 @@ A full-stack Beauty Inventory Management System built using modern web technolog
 
 ###
 1️⃣ Clone Repository
-```bash
+bash
 git clone https://github.com/your-username/beauty-inventory-fullstack-devops.git
 cd beauty-inventory-fullstack-devops
 
@@ -100,16 +100,20 @@ Initial JMeter failures due to server availability
 High memory usage with ZAP and Kubernetes
 CI/CD pipeline troubleshooting in Jenkins
 
-####
+---
 
 🎯 Conclusion
 
 This project demonstrates how DevOps tools and practices can be integrated into a full-stack application to improve automation, performance, and security. It highlights the importance of continuous integration, testing, and containerized environments in modern software development.
 
+---
+
 👤 Author
 
 Minh Ngoc Tran
 CEN 4802C – Software Integration, Configuration, and Testing
+
+---
 
 ⭐ Acknowledgment
 
