@@ -53,17 +53,20 @@ bash
 git clone https://github.com/your-username/beauty-inventory-fullstack-devops.git
 cd beauty-inventory-fullstack-devops
 
+
 2️⃣ Start Database (Docker)
 docker run -d \
   --name mysql-container \
   -e MYSQL_ROOT_PASSWORD=yourpassword \
   -e MYSQL_DATABASE=beauty_inventory \
   -p 3307:3306 mysql:8.4
+  
 
 3️⃣ Run Backend (Spring Boot)
 cd backend
 ./mvnw spring-boot:run
 👉 Runs at: http://localhost:8080
+
 
 4️⃣ Run Frontend
 cd frontend
@@ -71,28 +74,33 @@ npm install
 npm run dev
 👉 Runs at: http://localhost:5173
 
+
 🔄 CI/CD Pipeline (Jenkins)
 Jenkins is used to automate the build process
 Pipeline pulls code from repository
 Executes build using Maven
 Provides real-time logs and build status
 
+
 📊 Performance Testing (JMeter)
 Simulated multiple user requests
 Achieved 100% success rate after backend stabilization
 Measured response time and throughput
+
 
 🔐 Security Testing (OWASP ZAP)
 Identified vulnerabilities:
 Missing Content Security Policy (CSP)
 Information disclosure
 Input validation concerns
-Demonstrates importance of secure development practices
+Demonstrates the importance of secure development practices
+
 
 ☸️ Kubernetes
 Kubernetes enabled via Docker Desktop
 Verified using kubectl version
 Full cluster deployment limited by system resources
+
 
 ⚠️ Challenges
 Backend dependency on Docker services
